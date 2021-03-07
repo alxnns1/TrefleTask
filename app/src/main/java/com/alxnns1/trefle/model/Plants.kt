@@ -15,6 +15,7 @@ data class PlantsData(
     val genus: String,
     val genus_id: Int,
     val id: Int,
+    val image_url: String,
     val links: DataLinks,
     val plant_id: Int,
     val rank: String,

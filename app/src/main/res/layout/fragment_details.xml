@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/plant_details_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plant_details_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_image" />
+
+    <TextView
+        android:id="@+id/plant_details_family_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_name"
+        android:text="Family: "/>
+
+    <TextView
+        android:id="@+id/plant_details_family"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/plant_details_family_header"
+        app:layout_constraintTop_toTopOf="@id/plant_details_family_header"
+        app:layout_constraintBottom_toBottomOf="@id/plant_details_family_header" />
+
+    <TextView
+        android:id="@+id/plant_details_genus_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_family_header"
+        android:text="Genus: "/>
+
+    <TextView
+        android:id="@+id/plant_details_genus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/plant_details_genus_header"
+        app:layout_constraintTop_toTopOf="@id/plant_details_genus_header"
+        app:layout_constraintBottom_toBottomOf="@id/plant_details_genus_header" />
+
+    <TextView
+        android:id="@+id/plant_details_bibliography_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_genus_header"
+        android:text="Bibliography: "/>
+
+    <TextView
+        android:id="@+id/plant_details_bibliography"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/plant_details_bibliography_header"
+        app:layout_constraintTop_toTopOf="@id/plant_details_bibliography_header"
+        app:layout_constraintBottom_toBottomOf="@id/plant_details_bibliography_header" />
+
+    <TextView
+        android:id="@+id/plant_details_year_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_bibliography_header"
+        android:text="Year: "/>
+
+    <TextView
+        android:id="@+id/plant_details_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/plant_details_year_header"
+        app:layout_constraintTop_toTopOf="@id/plant_details_year_header"
+        app:layout_constraintBottom_toBottomOf="@id/plant_details_year_header" />
+
+    <TextView
+        android:id="@+id/plant_details_author_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_details_year_header"
+        android:text="Author: "/>
+
+    <TextView
+        android:id="@+id/plant_details_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/plant_details_author_header"
+        app:layout_constraintTop_toTopOf="@id/plant_details_author_header"
+        app:layout_constraintBottom_toBottomOf="@id/plant_details_author_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
